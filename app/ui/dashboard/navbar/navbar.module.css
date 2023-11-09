@@ -1,0 +1,50 @@
+.container {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--bgSoft);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ max-width: 100%;
+   overflow-x: hidden;
+}
+
+.title {
+  color: var(--textSoft);
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #2e374a;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  color: var(--text);
+}
+
+.icons{
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .search {
+    flex: 1; /* Allows the search bar to grow */
+  }
+  .icons {
+    display: none; /* Optionally hide icons on smaller screens */
+  }
+}
